@@ -4,7 +4,6 @@ return the median of the two sorted arrays.
 
 The overall run time complexity should be O(log (m+n)).
 """
-
 from math import inf
 from typing import List
 

@@ -1,10 +1,11 @@
 """
 Given a string s containing just the characters
 
-    '(', ')', '{', '}', '[' and ']',
+    '(', ')', '{', '}', '[' and ']'
 
 determine if the input string is valid.
 """
+import unittest
 
 
 class Solution:
@@ -20,3 +21,15 @@ class Solution:
             elif not stack or stack.pop() != c:
                 return False
         return not stack
+
+
+class TestSolution(unittest.TestCase):
+    def test_isValid(self):
+        solution = Solution()
+        s = "()[]{}"
+        output = solution.isValid(s)
+        self.assertTrue(output)
+
+
+if __name__ == "__main__":
+    unittest.main()

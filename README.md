@@ -1,3 +1,3 @@
 # LeetCode
 
-Python programming problems
+This repository contains LeetCode Python solutions.

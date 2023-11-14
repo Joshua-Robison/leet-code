@@ -32,6 +32,13 @@ class TestSolution(unittest.TestCase):
         output = solution.plusOne(digits)
         self.assertEqual(expected, output)
 
+    def test_betterPlusOne(self):
+        solution = Solution()
+        digits = [4, 3, 2, 1]
+        expected = [4, 3, 2, 2]
+        output = solution.betterPlusOne(digits)
+        self.assertEqual(expected, output)
+
 
 if __name__ == "__main__":
     unittest.main()
